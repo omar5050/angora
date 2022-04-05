@@ -1,0 +1,672 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+body
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+}
+
+/* class for title for every section title */
+.title-text
+{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end title text */
+
+
+
+/************************** start home **********************/
+
+
+.text-layer h1
+{
+    font-size: 70px;
+    font-weight: 700;
+}
+.text-layer
+{
+    left: 60%;
+}
+
+.layer-button button
+{
+    background-color: transparent;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+.btn {
+   
+    
+    border: 1px solid #fff;
+    border-left: none;
+    padding: 10px ;
+    font-size: 1rem;
+    border-top-right-radius: .25rem;
+  
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+   
+}
+/************************** end home **********************/
+
+
+
+
+
+/************************** start navar **********************/
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #EE5353;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #EE5353;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+}
+.nav-link
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* social icons */
+.social-icons > div > a
+{
+    color: black;
+    transition: .5s all;
+}
+.social-icons > div > a:hover
+{
+    color: #EE5353;
+}
+
+.mouse
+{
+    bottom: 50px;
+}
+.mouse-style
+{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #efefef;
+    border-radius: 10rem;
+    position: relative;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.mouse-style:hover
+{
+    border-color: #EE5353;
+}
+.mouse-style:hover::after
+{
+    background-color: #EE5353;
+}
+
+.mouse-style::after
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #efefef;
+    animation: mouse-move 1s linear infinite ;
+    transition: .5s all;
+}
+
+@keyframes mouse-move {
+    0%
+    {
+        top: 10px;
+    }
+    100%
+    {
+        top: 30px;
+        opacity: 0;
+    }
+    
+}
+
+.icon-seting-nav 
+{
+    top: 20%;
+    color: #efefef;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.icon-seting-nav:hover
+{
+    background-color:#434343 ;
+} 
+
+/* #434343 */
+/************************** end navbar **********************/
+
+
+
+
+
+
+/************************** start about **********************/
+
+.title-about h3
+{
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.title-about h2
+{
+    font-size: 2.5rem;
+}
+
+.title-about::after
+{
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    border-bottom: 1px solid black;
+    transition: width .5s;
+}
+
+.title-about:hover::after
+{
+    width: 60px;
+}
+
+    /* brand */
+.body-style-about .brand
+{
+    position: relative;
+}
+.move-brand
+{
+    left: 60%;
+}
+
+.body-style-about .brand::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 80%;
+    height: 6px;
+    background-color: #EE5353;
+   
+    border-radius: 5px;
+}
+
+.body-style-about .brand::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #efefef;
+    
+    border-radius: 5px;
+}
+
+/* web-design */
+.body-style-about .w-d
+{
+    position: relative;
+}
+.move-web 
+{
+    left: 70%;
+}
+
+.body-style-about .w-d::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 95%;
+    height: 6px;
+    background-color: #EE5353;
+   
+    border-radius: 5px;
+}
+
+.body-style-about .w-d::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #efefef;
+    
+    border-radius: 5px;
+}
+
+/* graphic design */
+.body-style-about .g-d
+{
+    position: relative;
+}
+.move-graphic
+{
+    left: 55%;
+}
+
+.body-style-about .g-d::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    height: 6px;
+    background-color: #EE5353;
+   
+    border-radius: 5px;
+}
+
+.body-style-about .g-d::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #efefef;
+    
+    border-radius: 5px;
+}
+
+/* web devlopment */
+.body-style-about .d-d
+{
+    position: relative;
+}
+.move-dev 
+{
+    left: 45%;
+}
+
+.body-style-about .d-d::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    height: 6px;
+    background-color: #EE5353;
+   
+    border-radius: 5px;
+}
+
+.body-style-about .d-d::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #efefef;
+    
+    border-radius: 5px;
+}
+/************************** end about **********************/
+
+
+
+
+
+/************************** start our team **********************/
+
+
+
+.title-team h2
+{
+    font-size: 2.5rem;
+}
+
+.title-team h3
+{
+    font-size: 5rem;
+    color: #f1f1f1
+}
+
+.title-after::after
+{
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    border-bottom: 1px solid black;
+    transition: width .5s;
+}
+
+.title-after:hover::after
+{
+    width: 60px;
+}
+
+.layer-team
+{
+    background-color: rgba(242, 84, 84, 0.85);
+}
+
+.img-team .layer-team
+{
+    opacity: 0;
+    transition: .3s all;
+}
+
+.img-team .layer-team:hover
+{
+    opacity: 1;
+}
+.img-team img
+{
+    transition: .3s all;
+}
+.img-team:hover img
+{
+    transform: scale(1.1);
+}
+.our-team-body:hover .content-team .change-color
+{
+    color: #EE5353;
+}
+
+.name-team
+{
+    font-size: 1rem;
+}
+.type-job
+{
+    font-size: .8rem;
+}
+
+/************************** end  our team **********************/
+
+/************************** start  idea  **********************/
+
+
+.idea-content button
+{   
+    cursor: pointer;
+}
+
+/************************** end  idea  **********************/
+
+/************************** start servise **********************/
+
+.title-services h2
+{
+    font-size: 2.5rem;
+}
+
+.title-services h3
+{
+    font-size: 5rem;
+    color: #f1f1f1
+}
+
+.icons-service
+{
+    color: #EE5353;
+}
+
+.service-body .content-service h5
+{
+    transition: all .5s;
+}
+
+.service-body:hover .content-service h5
+{
+    color: #EE5353;
+}
+.font-s
+{
+    font-size:16px;
+}
+
+/************************** end servise **********************/
+
+
+
+
+
+
+/************************** start testmonial **********************/
+
+.title-client h2
+{
+    font-size: 2.5rem;
+}
+
+.title-client h3
+{
+    font-size: 5rem;
+    color: #f1f1f1
+}
+
+.carousel-indicators [data-bs-target] {
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-indent: 0px;
+}
+
+/************************** end testmonial **********************/
+
+
+
+
+
+
+
+
+
+
+
+/************************** start contact **********************/
+
+.title-contact h2
+{
+    font-size: 2.5rem;
+}
+
+.title-contact h3
+{
+    font-size: 5rem;
+    color: #f1f1f1
+}
+
+.icons-info
+{
+    color: #EE5353;
+}
+.info .content-info h5
+{
+    transition: .5s all;
+}
+.info:hover  .content-info h5
+{
+    color: #EE5353;
+}
+.info
+{
+    position: relative;
+}
+.info::before
+{
+    content: " ";
+    position: absolute;
+    bottom: -50%;
+    left: 0px;
+    width: 100%;
+    
+   border-bottom: 1px solid #eee;
+}
+
+
+.custom-btn
+{
+    background-color: #EE5353;
+    color: #fff;
+}
+.btn:hover {
+    color: #fff;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #EE5353;
+    outline: 0;
+    box-shadow: unset;
+}
+.form-control
+{
+    border-radius: 0;
+}
+::placeholder {
+  color: #6c757d!important;
+  opacity: .3 !important;
+  font-size: .7rem;
+}
+
+/************************** end contact **********************/
+
+
+
+
+
+/************************** start footer **********************/
+#footer
+{
+    background-color: #222222;
+}
+
+.footer-body ul > li
+{
+    list-style: none;
+}
+.footer-body ul li > a 
+{
+    transition: .5s all;
+}
+.footer-body ul li > a:hover
+{
+   color: #EE5353 !important;
+}
+
+.link-footer
+{
+    text-decoration: none;
+    border: 1px solid #b0b0b0;
+    
+    border-radius: 3px;
+   
+    color: #b0b0b0;
+    transition: .5s all;
+}
+.link-footer:hover
+{
+    color: #EE5353;
+    border-color: #EE5353;
+}
+
+.footer-body .popular-tags
+{
+    text-decoration: none;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .5s all;
+}
+
+.font-13x
+{
+    font-size: 13px;
+}
+
+.footer-body .popular-tags:hover
+{
+    border-color: #EE5353;
+    color: #EE5353;
+}
+
+/************************** end footer **********************/
+
+
+/* copyright  #b0b0b0*/
+
+.copy-right
+{
+    background-color: #1A1A1A;
+}
+.icons-end a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+.icons-end a:hover
+{
+    color: #EE5353;
+}
+
+.content-copy a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s all;
+}
+.content-copy a:hover
+{
+    color: #EE5353;
+}
